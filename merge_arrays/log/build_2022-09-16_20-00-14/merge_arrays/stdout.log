@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/merge_arrays/merge_arrays.egg-info/PKG-INFO
+writing dependency_links to ../../build/merge_arrays/merge_arrays.egg-info/dependency_links.txt
+writing entry points to ../../build/merge_arrays/merge_arrays.egg-info/entry_points.txt
+writing requirements to ../../build/merge_arrays/merge_arrays.egg-info/requires.txt
+writing top-level names to ../../build/merge_arrays/merge_arrays.egg-info/top_level.txt
+reading manifest file '../../build/merge_arrays/merge_arrays.egg-info/SOURCES.txt'
+writing manifest file '../../build/merge_arrays/merge_arrays.egg-info/SOURCES.txt'
+running build
+running build_py
+copying merge_arrays/merge_arrays_node.py -> /home/ubuntu/merge_arrays/build/merge_arrays/build/lib/merge_arrays
+running install
+running install_lib
+copying /home/ubuntu/merge_arrays/build/merge_arrays/build/lib/merge_arrays/merge_arrays_node.py -> /home/ubuntu/merge_arrays/install/merge_arrays/lib/python3.10/site-packages/merge_arrays
+byte-compiling /home/ubuntu/merge_arrays/install/merge_arrays/lib/python3.10/site-packages/merge_arrays/merge_arrays_node.py to merge_arrays_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ubuntu/merge_arrays/install/merge_arrays/lib/python3.10/site-packages/merge_arrays-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/merge_arrays/merge_arrays.egg-info to /home/ubuntu/merge_arrays/install/merge_arrays/lib/python3.10/site-packages/merge_arrays-0.0.0-py3.10.egg-info
+running install_scripts
+Installing merge_arrays_node script to /home/ubuntu/merge_arrays/install/merge_arrays/lib/merge_arrays
+writing list of installed files to '/home/ubuntu/merge_arrays/build/merge_arrays/install.log'
