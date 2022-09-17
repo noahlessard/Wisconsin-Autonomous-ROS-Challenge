@@ -3,14 +3,14 @@ from rclpy.node import Node # Enables the use of rclpy's Node class
 from std_msgs.msg import Int32MultiArray # Enable use of the std_msgs/Float64MultiArray message type
 import numpy as np # NumPy Python library
  
+ 
+#Create a class that has access to all the node code
 class PublishingSubscriber(Node):
   
-  global arr2
-  arr2 = []
+  unsortedArray = []
 
-  global Sortedarr2
-  Sortedarr2 = Int32MultiArray()
-  Sortedarr2.data = []
+  sortedArray = Int32MultiArray()
+  sortedArray.data = []
 
   def __init__(self):
    
@@ -30,18 +30,18 @@ class PublishingSubscriber(Node):
    
     i = 0
     for x in msg.data:
-        if x not in arr2:
-            arr2.append(msg.data[i])
+        if x not in self.unsortedArray:
+            self.unsortedArray.append(msg.data[i])
         i += 1
 
     i = 0
     
-    Sortedarr2.data = sorted(arr2)
+    self.sortedArray.data = sorted(self.unsortedArray)
        
   
   def publish(self):
-    self.publisher1.publish(Sortedarr2)
-    self.get_logger().info('Publishing: "%s"' % Sortedarr2.data)
+    self.publisher1.publish(self.sortedArray)
+    self.get_logger().info('Publishing: "%s"' % self.sortedArray.data)
 
 
 def main(args=None):
